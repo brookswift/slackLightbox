@@ -1,5 +1,8 @@
 Thank you for the interview opportunity. This is a simple project with 3 files.
 
+Public URL
+https://cdn.rawgit.com/brookswift/slackLightbox/b422d4ff/lightbox.html
+
 Project Summary
 lightbox.js contains a lightbox module with some application constants and the
 instantiation of the application. The application will initially load 72 thumbnails

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flickr Search Example Lightbox</title>
+  <script type="text/javascript" src="lightbox.js"></script>
+  <link rel="stylesheet" type="text/css" href="lightbox.css" />
+</head>
+<body>
+<div class="wrapper">
+  <form id="searchForm">
+    <h1>Welcome to the Flickr Lightbox Demo</h1>
+    <input type="text" placeholder="kitten" id="photoSearch" />
+    <button type="submit">Search</button>
+    <p class="error"></p>
+  </form>
+
+  <section class="gallery">
+    <!-- example link -->
+    <!-- <a href="https://farm1.staticflickr.com/823/41558724171_b5cf9a1a3f_z.jpg"><img src="https://farm1.staticflickr.com/823/41558724171_b5cf9a1a3f_s.jpg"></a> -->
+  </section>
+
+  <!-- the loading class prevents animations from running until the page is loaded -->
+  <section class="lightbox-background loading"></section>
+  <section class="lightbox loading">
+    <div class="lightbox-detail">
+      <h2>Flower Title</h2>
+      <a href="#" class="prev">&#8249;</a>
+      <img class="detail-image">
+      <a href="#" class="next">&#8250;</a>
+    </div>
+  </section>
+</div>
+</body>
+</html>

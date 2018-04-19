@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* Search Form */
+#searchForm {
+  width: 312px;
+  margin: 0 auto;
+}
+
+#searchForm h1 {
+  font-size: 16px;
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Gallery */
+.gallery {
+  width: 312px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.gallery a {
+  display: inline-grid;
+  transition: transform .2s;
+}
+
+.gallery a:hover,
+.gallery a:focus,
+.gallery a:active {
+  transform: scale(1.1); /* gives a slight zoom effect on hover */
+}
+
+.gallery a img {
+  border-radius: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+
+/* lightbox/detail view */
+.lightbox-background {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.2s, opacity 0.2s;
+}
+
+.lightbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1001;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.2s, opacity 0.2s;
+}
+
+.loading {
+  display: none;
+}
+
+.visible {
+  transition: opacity 0.2s;
+  visibility: visible;
+}
+.lightbox-background.visible {
+  opacity: 0.75;
+}
+.lightbox.visible {
+  opacity: 1;
+}
+
+.lightbox-detail {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.lightbox-detail h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.next,
+.prev {
+  color: grey;
+  font-size: 60px;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.next:hover,
+.next:focus,
+.next:active,
+.prev:hover,
+.prev:focus,
+.prev:active {
+  color: cyan;
+}

@@ -22,7 +22,7 @@ let lightbox = (function () {
 
   // initializing the commonly usedDOM selectors here so that they are just grabbed once
   let lightboxBackgroundEl;
-  let lightbox;
+  let lightboxEl;
   let detailImageEl;
   let galleryEl;
   let errorEl;
